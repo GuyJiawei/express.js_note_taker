@@ -27,7 +27,7 @@ notes.post('/', (req, res) => {
         const newNote = {
             title,
             text,
-            tip_id: uuidv4(),
+            note_id: uuidv4(),
         };
 
         // Append the new note to the file
@@ -56,4 +56,4 @@ notes.delete('/:id', (req, res) => {
       });
   });
 
-module.exports = tips;
+module.exports = notes;
